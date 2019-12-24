@@ -15,14 +15,18 @@ public class UserController {
 	
 //	@GetMapping("/create")	
 //	public String create(String userId, String password, String name, String email ) {
-	@PostMapping("/create")
 //	public String create(String userId, String password, String name, String email ) {
+	
+	
+	@PostMapping("/create")
 	public String create(User user) {	
 	
-//		System.out.println("userId:" + userId + ", name:" + name + ", email: " + email);
+//		System.out.println("userId:" + userId + ", name:" + name + ", email: " + email);		
+//		return "index";
+		
 		System.out.println("user: " + user);
 		users.add(user);
-//		return "index";
+		  
 		return "redirect:/list";
 	}
 
